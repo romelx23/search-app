@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.header-content {
+  width: 90%;
+  box-shadow: 2px 3px 15px 9px rgba(168, 183, 197, 1);
+  border: 1px solid #e5e9ef;
+  padding: 40px 100px;
+}
+@media screen and (max-width: 900px) {
+  .header{
+    padding: 0px;
+  }
+  .header-content {
+    width: 100%;
+    padding: 10px 50px;
+  }
+}

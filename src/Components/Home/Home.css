@@ -1,0 +1,95 @@
+:root {
+  --colorAzul: #3c83c0;
+  --colorPlomo: #a79c9cfd;
+}
+.home {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-text {
+  flex-basis: 50%;
+  font-family: "Poppins", sans-serif;
+}
+.home-text h1 {
+  color: var(--colorAzul);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  font-weight: normal;
+  font-weight: 800;
+}
+.home-text h1 strong {
+  font-weight: 800;
+  font-size: 55px;
+}
+.home-text h1 span {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.home-text p {
+  width: 70%;
+  font-size: 16px;
+  color: var(--colorPlomo);
+  padding: 20px 0px;
+}
+.home-text button {
+  background-color: #e3b142;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.home-text button:hover {
+  background-color: white;
+  border: 1px solid #e3b142;
+  color: #e3b142;
+}
+.home-img {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.home-img__item {
+  flex-basis: 50%;
+}
+.home-img__item img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-text {
+    flex-basis: 100%;
+  }
+  .home-img {
+    padding-top: 60px;
+    flex-basis: 50%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home-text {
+    flex-basis: 100%;
+  }
+  .home-text p {
+    width: 100%;
+  }
+  .home-img {
+    padding: 60px 0px;
+    flex-basis: 90%;
+    margin: auto;
+  }
+  .home-img img {
+    width: 100%;
+  }
+}
