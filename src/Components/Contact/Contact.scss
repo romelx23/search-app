@@ -17,6 +17,7 @@
     align-items: $align;
 }
 .seccion-contacto{
+    font-size: 62.5%;
     position: relative;
     @include  displayflex(flex,row,center,center);
     min-height: 80vh;
@@ -36,22 +37,22 @@
 
     .contact-container{
         position: relative;
-        min-width: 1100px;
-        min-height: 550px;
+        min-width: 110rem;
+        min-height: 55rem;
         display: flex;
         z-index: 100;
 
         .contactinfo{
             position: absolute;
-            top: 40px;
-            width: 350px;
-            height: calc(100%-80px);
+            top: 4rem;
+            width: 35rem;
+            height: calc(100%-8rem);
             background-color: var(--fondoContact);
             z-index: 200;
-            padding: 40px;
+            padding: 4rem;
             display: flex;
             @include  displayflex(flex,column,space-between,center);
-            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
             font-family: 'Roboto',sans-serif;
             transition: all 0.5s;
 
@@ -66,24 +67,24 @@
 
 .contactinfo h2{
     color: aliceblue;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 500;
 }
 
 .contactinfo .info{
     position: relative;
-    margin: 20px 0;
+    margin: 2rem 0;
     li{
         position: relative;
         list-style: none;
         display: flex;
-        margin: 20px 0;
+        margin: 2rem 0;
         cursor: pointer;
         align-items: flex-start;
 
         span:nth-child(1){
-            width: 30px;
-            min-height: 30px;
+            width: 3rem;
+            min-height: 3rem;
         }
 
         span:nth-child(1) i{
@@ -114,7 +115,7 @@
 
 .contactinfo .sci li{
     list-style: none;
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .contactinfo .sci li a{
@@ -134,28 +135,29 @@
 }
 
 .contact-container .cardForm{
+    font-size: 50%;
     position: absolute;
-    padding: 20px 50px;
+    padding: 2rem 5rem;
     background-color: var(--fondoCard);
-    left: 250px;
-    padding-left: 250px;
+    left: 25rem;
+    padding-left: 25rem;
     width: calc(100%-150px);
     height: 100%;
     z-index: 1;
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5rem 5rem rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
-
     h2{
         color: #0f3959;
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 500;
     }
     .formBox{
+        font-size: 62.5%;
         position: relative;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding-top: 3rem;
         .inputBox{
             position: relative;
             margin: 0 0 35px 0;
@@ -181,7 +183,7 @@
             position: relative;
             @include  displayflex(flex,column,space-between,center);
             flex-wrap: wrap;
-            padding-top: 30px;
+            padding-top: 3rem;
         }
         }
         @media(max-width:576px){
@@ -189,7 +191,7 @@
                 position: relative;
                 @include  displayflex(flex,column,space-between,center);
                 flex-wrap: wrap;
-                padding-top: 30px;
+                padding-top: 3rem;
             }
         }
     }
@@ -197,9 +199,9 @@
         &{
             position: relative;
             margin: auto;
-            left: 20px;
+            left: 2rem;
             padding: 0px;
-            padding: 20px 100px;
+            padding: 2rem 10rem;
             width: 60%;
         }
     }
@@ -209,7 +211,7 @@
         margin: auto;
         left: 1%;
         padding: 0px;
-        padding: 20px 100px;
+        padding: 2rem 10rem;
         width: 50%;
         }
     }
@@ -218,7 +220,7 @@
         position: relative;
         margin: auto;
         padding: 0px;
-        padding: 20px 100px;
+        padding: 2rem 10rem;
         width: 40%;
         }
     }
@@ -227,25 +229,25 @@
 .formBox .inputBox input,
 .formBox .inputBox textarea{
     width: 100%;
-    padding: 5px 0;
-    font-size: 18px;
+    padding: 0.5rem 0;
+    font-size: 1.8rem;
     font-weight: 300;
     color: #333;
     resize: none;
     border: none;
-    border-bottom: 1px solid #777;
+    border-bottom: 0.1rem solid #777;
     outline: none;
 }
 
 .formBox .inputBox textarea{
-    min-height: 120px;
+    min-height: 12rem;
 }
 
 .formBox .inputBox span{
     position: absolute;
     left: 0;
-    padding: 5px 0;
-    font-size: 18px;
+    padding: 0.5rem 0;
+    font-size: 1.8rem;
     font-weight: 300;
     color: #333;
     transition: 0.5s;
@@ -257,7 +259,7 @@
 .formBox .inputBox input:valid ~ span, 
 .formBox .inputBox textarea:valid ~ span{
     transform: translateY(-20px);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 1px;
     color: #ff568c;
@@ -269,12 +271,12 @@
     background-color: #0f3959;
     color: #fff;
     border: none;
-    max-width: 150px;
-    padding: 12px;
+    max-width: 15rem;
+    padding: 1.2rem;
 
     @media(max-width:576px){
         &{
-            margin: 0 50px
+            margin: 0 5rem
         }
     }
 }

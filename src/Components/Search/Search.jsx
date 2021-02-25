@@ -19,7 +19,7 @@ const Search = ({setsearch}) => {
     let book = e.target.value;
     setbook(book);
     // setsearch(book);
-    console.log(book);
+    // console.log(book);
   };
   return (
     <section className="book-search">
