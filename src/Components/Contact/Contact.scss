@@ -16,8 +16,8 @@
     justify-content: $content;
     align-items: $align;
 }
+
 .seccion-contacto{
-    font-size: 62.5%;
     position: relative;
     @include  displayflex(flex,row,center,center);
     min-height: 80vh;
@@ -36,9 +36,10 @@
     /* Estilos para el contactinfo*/
 
     .contact-container{
+        padding: 2rem;
         position: relative;
-        min-width: 110rem;
-        min-height: 55rem;
+        min-width: 90rem;
+        min-height: 50rem;
         display: flex;
         z-index: 100;
 
@@ -46,7 +47,7 @@
             position: absolute;
             top: 4rem;
             width: 35rem;
-            height: calc(100%-8rem);
+            height: calc(100%-80px);
             background-color: var(--fondoContact);
             z-index: 200;
             padding: 4rem;
@@ -135,7 +136,7 @@
 }
 
 .contact-container .cardForm{
-    font-size: 50%;
+    // font-size: 50%;
     position: absolute;
     padding: 2rem 5rem;
     background-color: var(--fondoCard);
