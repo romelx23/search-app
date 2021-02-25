@@ -3,7 +3,7 @@
   --colorDeLetra: rgb(56, 53, 53);
   --colorDeFondo: #fff;
   --colorDeLetraDeAlerta: #b1565f;
-  --colorDeFondoDeAlerta: #f8d7da;
+  --colorDeFondoDeAlerta: #eeced0;
 }
 main{
   position: sticky;
