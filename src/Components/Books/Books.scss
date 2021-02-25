@@ -59,10 +59,7 @@
     height: 21rem;
     margin: auto;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include  displayflex(flex,column,space-around,center);
     padding: 2rem;
     background-color: #e0e0e0;
     border-radius: 2rem;
@@ -73,10 +70,7 @@
     overflow: hidden;
     .content-card{
         position: absolute;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        @include  displayflex(flex,column,center,center);
         text-align: center;
         padding: 2rem;
         background:rgba(146, 149, 149, 0.479);

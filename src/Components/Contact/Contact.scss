@@ -4,13 +4,23 @@
     --fondoContact:#20495c;
     --fondoCard:#fff;
 }
+@mixin response-to($width) {
+    @media(max-width: $width) {
+      @content;
+    }
+  }
+
+@mixin displayflex($display,$direction,$content,$align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
 .seccion-contacto{
     position: relative;
-    justify-content: center;
-    align-items: center;
+    @include  displayflex(flex,row,center,center);
     min-height: 80vh;
     background-color: var(--fondo1);
-    display: flex;
     overflow: hidden;
     &:before{
         content: '';
@@ -40,8 +50,7 @@
             z-index: 200;
             padding: 40px;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include  displayflex(flex,column,space-between,center);
             box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
             font-family: 'Roboto',sans-serif;
             transition: all 0.5s;
@@ -170,9 +179,7 @@
         @media(max-width:768px){
         &{
             position: relative;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
+            @include  displayflex(flex,column,space-between,center);
             flex-wrap: wrap;
             padding-top: 30px;
         }
@@ -180,9 +187,7 @@
         @media(max-width:576px){
             &{
                 position: relative;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
+                @include  displayflex(flex,column,space-between,center);
                 flex-wrap: wrap;
                 padding-top: 30px;
             }
