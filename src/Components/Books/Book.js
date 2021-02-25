@@ -7,7 +7,7 @@ const Book = ({titulo,imagen,description,episode}) => {
         let card=document.getElementsByClassName('card-book');
         for (let i = 0; i < card.length; i++) {
             let posic= card[i].getBoundingClientRect().top;
-            let scp1= window.innerHeight/1.3;
+            let scp1= window.innerHeight/1.1;
             if(scp1<posic){
                 card[i].classList.add('active4');
             }else{

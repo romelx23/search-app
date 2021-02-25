@@ -21,6 +21,7 @@ main{
 .form-book {
   max-width: 100%;
   width: 70%;
+
 }
 
 .form-book .alert {
@@ -33,7 +34,7 @@ main{
   font-weight: bold;
 }
 .form-book__control {
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
   position: relative;
   width: 100%;
   background-color: var(--colorDeFondo);
