@@ -8,7 +8,7 @@ const Books = ({books}) => {
     return (
         <div className="container-book">
             
-            <div className="grid-book">
+            <div className="grid-book" id="grid-book">
                 <h2>Libros Clásicos</h2>
                 {books.map((book)=>(
                         <Book titulo={book.title} key={book.mal_id} episode={book.episodes} imagen={book.image_url} description={book.synopsis}/>

@@ -22,11 +22,11 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
+      <Header/>
       <main>
         <Search setsearch={setsearch}/>
-        <Dark/>
       </main>
+        <Dark/>
         <Books books={books}/>
       <Contact />
       <Footer />

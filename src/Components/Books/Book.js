@@ -23,7 +23,7 @@ const Book = ({titulo,imagen,description,episode}) => {
             <img src={imagen} alt="book"/>
         </figure>
         <div className="content-card">
-                <h3 className="autor">{episode}</h3>
+                <h3 className="autor">Capítulos {episode}</h3>
                 <h4 className="description">{description}</h4>
         </div>
     </div> 

@@ -1,5 +1,5 @@
 .btn-search{
-    position: absolute;
+    position: fixed;
     top: 200px;
     width: 50px;
     right: 30px;
@@ -33,4 +33,22 @@
 .darkmode-card{
     background-color: rgb(165, 165, 182);
     color: black;
+}
+html[data-theme="dark"] {
+    --primary-color: #fff;
+    --secondary-color: #656666;
+  }
+.light {
+    --theme-color: #A80000;
+    --theme-page-background: #FFF;
+    --theme-page-text: rgb(15, 15, 15);
+    --theme-hover-background:#bdbdbd;
+}
+
+.dark {
+    transition: all 0.5s ease;
+    --theme-color: #0000A8;
+    --theme-page-background: rgb(88, 88, 88);
+    --theme-page-text: #FFF;
+    --theme-hover-background:rgb(117, 117, 117);
 }

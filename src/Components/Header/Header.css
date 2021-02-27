@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
   padding: 30px 0px;
+  background: var(--theme-page-background);
+  color: var(--theme-page-text);
+  transition: all 0.5s ease;
 }
 .header-content {
   width: 90%;

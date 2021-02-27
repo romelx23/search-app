@@ -27,7 +27,7 @@ const Home = () => {
           </figure> */}
           <figure className="home-img__item">
             {/* <img src="./assets/libros.svg" alt="Libros Electronicos" /> */}
-            <svg className="fondo" width="500" height="500" viewBox="0 0 1455 1160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="fondo" width="100%" height="100%" viewBox="0 0 1455 1160" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="libro">
     <path id="fondo" d="M501.212 1C196.943 1 52.7478 322.496 18.6837 483.245C-11.4391 652.058 -8.23557 933.133 69.0761 1053.27C146.388 1173.41 414.313 1213.65 501.212 1053.27C588.111 892.899 785.831 662.469 1116.34 992.781C1446.84 1323.09 1503.33 988.654 1419.25 811.306C1372.99 720.522 1271.34 527.811 1234.86 483.245C1189.25 427.536 881.548 1 501.212 1Z" fill="url(#paint0_linear)" stroke="black"/>
     <g id="books">
