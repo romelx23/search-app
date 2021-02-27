@@ -8,11 +8,11 @@
 }
 .header-content {
   width: 90%;
-  height: 700px;
+  /* height: 700px; */
   box-shadow: 2px 3px 15px 9px rgba(168, 183, 197, 1);
   border: 1px solid #e5e9ef;
   border-radius: 20px;
-  padding: 40px 100px;
+  padding: 40px 70px;
 }
 @media screen and (max-width: 900px) {
   .header{
