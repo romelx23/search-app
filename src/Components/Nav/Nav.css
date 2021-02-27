@@ -25,6 +25,7 @@
 }
 .nav-logo {
   flex-basis: 20%;
+   animation:1.2s bajada ease;
 }
 .nav-logo img {
   max-width: 55px;
@@ -35,6 +36,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
+   animation:1.2s bajada ease;
 }
 .nav-list__item {
   flex-basis: auto;

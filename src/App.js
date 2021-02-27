@@ -4,7 +4,7 @@ import Contact from "./Components/Contact/Contact";
 import Header from "./Components/Header/Header";
 import Search from "./Components/Search/Search.jsx";
 import Books from "./Components/Books/Books"
-import Dark from "./Components/Books/Dark"
+import Dark from "./Components/Dark/Dark.jsx"
 import { useEffect, useState } from "react";
 function App() {
   let value="shin";
@@ -24,8 +24,8 @@ function App() {
     <div className="container">
       <Header />
       <main>
-        <Dark/>
         <Search setsearch={setsearch}/>
+        <Dark/>
       </main>
         <Books books={books}/>
       <Contact />
